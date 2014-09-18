@@ -1,5 +1,4 @@
-<big><b>
-1-InstagramPhotoViewer
+<big><b>InstagramPhotoViewer
 ======================
 <b></big>
 
@@ -18,10 +17,8 @@ Time spent for New Upload: 12 hours spent in total<br>
 <big>&#9745;</big> Optional: For each photo displayed, user can see the following detail : like count<br>
 <big>&#9745;</big> Optional: For each photo displayed, user can see the following detail : user profile<br>
 
-<br>
 Notes:<br>
 -None<br>
-
 Issues:<br>
 -None<br>
 
