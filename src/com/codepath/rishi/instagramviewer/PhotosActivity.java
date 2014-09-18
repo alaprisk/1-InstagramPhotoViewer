@@ -30,7 +30,7 @@ public class PhotosActivity extends Activity {
         setContentView(R.layout.activity_photos);
         
         fetchPopularPhotos();
-        
+                
         
     }
 
@@ -104,6 +104,37 @@ public class PhotosActivity extends Activity {
 						photo.imageUrl = photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getString("url");
 						photo.imageHeight = photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getInt("height");
 						photo.likesCount = photoJSON.getJSONObject("likes").getInt("count");
+						
+						photo.profilePicUrl = photoJSON.getJSONObject("user").getString("profile_picture");
+						
+						
+						//photo.time = photoJSON.getJSONObject("created_time");
+						
+						photo.time = photoJSON.getString("created_time");
+						
+						int count = 0;
+						if(!photoJSON.isNull("comments"))
+						{
+							// Parsing comments.
+							count = photoJSON.getJSONObject("comments").getInt("count");
+							Log.i("INFO","comments count = " + count);
+
+							photo.commentsTag = " view all " + count + " comments";
+							
+                            if(count > 0){
+                            	
+                            	int commentsLength = photoJSON.getJSONObject("comments").getJSONArray("data").length();
+                            	
+                            	JSONObject comments = photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(commentsLength-1);                         	
+                            	photo.comment1 = comments.getJSONObject("from").getString("username");
+                            	photo.comment1_text = comments.getString("text");
+                            	
+                            	comments = photoJSON.getJSONObject("comments").getJSONArray("data").getJSONObject(commentsLength-2);
+                            	photo.comment2 = comments.getJSONObject("from").getString("username");
+                            	photo.comment2_text = comments.getString("text");
+
+                            }
+						}
 						
 						
 						photos.add(photo);
