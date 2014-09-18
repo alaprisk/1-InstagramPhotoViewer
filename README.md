@@ -1,4 +1,4 @@
-<big><b>InstagramPhotoViewer
+<big><b>Instagram Popular Photos
 ======================
 <b></big>
 
