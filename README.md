@@ -11,14 +11,16 @@ Time spent for New Upload: 12 hours spent in total<br>
 
 <big>&#9745;</big> Required: Creating the Instagram Popular photo viewer App<br>
 <big>&#9745;</big> Required: User can scroll through current popular photos from Instagram<br>
-<big>&#9745;</big> Required: For each photo displayed, user can see the following details: Graphic, Caption, Username<br>
+<big>&#9745;</big> Required: For each photo displayed, User can see the following details: Graphic, Caption, Username<br>
 
-<big>&#9745;</big> Optional: For each photo displayed, user can see the following detail : relative timestam<br>
-<big>&#9745;</big> Optional: For each photo displayed, user can see the following detail : like count<br>
-<big>&#9745;</big> Optional: For each photo displayed, user can see the following detail : user profile<br>
+<big>&#9745;</big> Optional: User can see the detail : Relative timestam<br>
+<big>&#9745;</big> Optional: User can see the detail : Likes count<br>
+<big>&#9745;</big> Optional: User can see the detail : User profile picture displayed using Circular Image View<br>
+<big>&#9745;</big> Optional: User can see the detail : Two most recent Comments<br>
 
 Notes:<br>
--None<br>
+-Used 3rd party Library for Circular Image View<br>
+
 Issues:<br>
 -None<br>
 
